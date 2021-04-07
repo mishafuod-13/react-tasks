@@ -1,4 +1,23 @@
 html, body {
     padding: 0px;
     margin: 0px;
+    width: 100%;
+    height: 100%;  
+}
+* {
+    box-sizing: border-box;
+}
+.container {
+    display: flex;
+    align-items: center;
+    border: 3px solid red;
+    height: 100%;
+}
+
+Ishop {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 350px;
+    height:350px;
+    border: 3px solid blue;
 }
