@@ -1,3 +1,11 @@
+/*colors pallete: 
+#0D8671
+#108757
+#193340
+#E4E86F
+#FD4933
+*/
+
 html, body {
     padding: 0px;
     margin: 0px;
@@ -6,18 +14,28 @@ html, body {
 }
 * {
     box-sizing: border-box;
+    background-color: #0D8671;
 }
 .container {
     display: flex;
     align-items: center;
+    justify-content: center;
     border: 3px solid red;
     height: 100%;
 }
 
-Ishop {
+.Ishop {
     display: flex;
-    flex-wrap: nowrap;
-    width: 350px;
-    height:350px;
-    border: 3px solid blue;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 80vh;
+}
+
+.Ishop__header {
+    display: flex;
+    justify-content: center;
+    color : white;
+}
+.Ishop__content-block {
+    width: 100%;
 }

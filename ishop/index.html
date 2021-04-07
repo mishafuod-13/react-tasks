@@ -1,21 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>React hometask</title>
     <script src="https://unpkg.com/react@15/dist/react.js"></script> 
-    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script> 
-    <script src="script.js"></script>
+    <script src="https://unpkg.com/react-dom@15/dist/react-dom.js"></script>
     <link rel="stylesheet" href="style.css">
+    <script src="Ishop.js"></script>
 </head>
 <body> 
     <main class="container">
     </main>
     <script>
+        var propsTest  =  [
+            {   name:"Корнеудалитель Fiskars 1020125",
+                cost: 152,
+                url: "https://content2.onliner.by/catalog/device/large/932266e190fd7af017ef90495dcd2ffd.jpeg",
+                description:"Kорнеудалитель, сталь, 1.25 кг",
+                balance : 234,
+    },]
         ReactDOM.render ( 
-            React.createElement("Ishop"), 
+            React.createElement(Ishop, {shopname: "Ishop", goods: propsTest }), 
             document.querySelector(".container"),
         );
     </script>  
