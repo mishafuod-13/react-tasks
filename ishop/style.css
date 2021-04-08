@@ -20,9 +20,14 @@ html, body {
     flex-direction: column;
 }
 .Ishop__header {
-    display: flex;
-    justify-content: center;
-    color : white;
+    padding: 5vh;
+    text-align: center;
+    background-color: #ddd;
+    color : red;
+    letter-spacing: 1vh;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 3vh;
 }
 .Ishop__table {
     display: table;
@@ -32,7 +37,7 @@ html, body {
     border-spacing: 5vh 2vh;
     background-color : #eee;
 }
-.Ishop__table > :first-child {
+.Ishop__table > :nth-child(2) {
     text-transform: uppercase;
     background: black;
 }
