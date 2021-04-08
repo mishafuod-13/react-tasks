@@ -1,11 +1,3 @@
-/*colors pallete: 
-#0D8671
-#108757
-#193340
-#E4E86F
-#FD4933
-*/
-
 html, body {
     padding: 0px;
     margin: 0px;
@@ -14,28 +6,47 @@ html, body {
 }
 * {
     box-sizing: border-box;
-    background-color: #0D8671;
+    background-color: #ddd;
+    font-family: Verdana, "Trebuchet MS", Geneva, sans-serif;
 }
 .container {
     display: flex;
-    align-items: center;
     justify-content: center;
     border: 3px solid red;
     height: 100%;
 }
-
 .Ishop {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     flex-direction: column;
-    width: 80vh;
 }
-
 .Ishop__header {
     display: flex;
     justify-content: center;
     color : white;
 }
-.Ishop__content-block {
+.Ishop__table {
+    display: table;
+    table-layout: fixed;
     width: 100%;
+    border-collapse: collapse;
+    border-spacing: 5vh 2vh;
+    background-color : #eee;
+}
+.Ishop__table > :first-child {
+    text-transform: uppercase;
+    background: black;
+}
+.Ishop__line {
+    text-align: center;
+    word-wrap:break-word;
+    margin-top: 5vh;
+    padding: 2vh;
+    border: 1px solid black;
+}
+.Ishop__cell {
+    border: 1px solid black;
+}
+.Ishop__table:nth-child(odd) {
+    background-color: #eee;
 }
