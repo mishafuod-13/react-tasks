@@ -27,7 +27,7 @@ html, body {
     letter-spacing: 1vh;
     text-transform: uppercase;
     font-weight: 800;
-    font-size: 3vh;
+    font-size: 22px;
 }
 .Ishop__table {
     display: table;
@@ -36,10 +36,6 @@ html, body {
     border-collapse: collapse;
     border-spacing: 5vh 2vh;
     background-color : #eee;
-}
-.Ishop__table > :nth-child(2) {
-    text-transform: uppercase;
-    background: black;
 }
 .Ishop__line {
     text-align: center;
@@ -50,7 +46,4 @@ html, body {
 }
 .Ishop__cell {
     border: 1px solid black;
-}
-.Ishop__table:nth-child(odd) {
-    background-color: #eee;
 }
